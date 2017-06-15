@@ -31,7 +31,7 @@ func ReadStraps(reader io.Reader) ([]XMLStrap, error) {
 func Parseit() {
 	// Build the location of the straps.xml file
 	// filepath.Abs appends the file name to the default working directly
-	strapsFilePath, err := filepath.Abs("../straps.xml")
+	strapsFilePath, err := filepath.Abs("straps.xml")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
